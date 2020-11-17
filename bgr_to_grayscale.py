@@ -9,6 +9,7 @@ root=tkinter.Tk()
 root.geometry("500x500")
 root.resizable(0,0)
 root.title("RGB to GRAY")
+root.iconbitmap("icon.ico")
 
 def showimage():
     global gray_img
