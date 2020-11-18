@@ -12,7 +12,7 @@ root.title("RGB to GRAY")
 root.iconbitmap("icon.ico")
 
 def showimage():
-    global gray_img
+    global gray_real_img
     img_path=filedialog.askopenfilename(initialdir="/",title="Select Image",filetype=(("All Files","*.*"),("JPG File","*.jpg"),("PNG File","*.png")))
     #display original image
     orig_img=Image.open(img_path)
@@ -22,6 +22,7 @@ def showimage():
     orig_img_frame.image=orig_img
 
     gray_img=Image.open(img_path).convert('LA')
+    gray_real_img=Image.open(img_path).convert('LA')
     gray_img.thumbnail((350,350))
     img=ImageTk.PhotoImage(gray_img)
     img_frame.config(image=img)
@@ -32,7 +33,7 @@ def close():
 
 def save():
     save_name=filedialog.asksaveasfilename(initialdir="/",defaultextension=".png",filetype=(("PNG File","*.png"),("JPG File","*.jpg"),("All Files","*.*")))
-    gray_img.save(save_name)
+    gray_real_img.save(save_name)
 
 #set default image
 default_real_img=Image.open("default.jpg")
