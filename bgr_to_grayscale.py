@@ -8,7 +8,7 @@ from PIL import ImageTk,Image
 root=tkinter.Tk()
 root.geometry("500x500")
 root.resizable(0,0)
-root.title("RGB to GRAY")
+root.title("BGR to GRAY")
 root.iconbitmap("icon.ico")
 
 def showimage():
@@ -36,11 +36,11 @@ def save():
     gray_real_img.save(save_name)
 
 #set default image
-default_real_img=Image.open("default.jpg")
+default_real_img=Image.open("resources/images/akr.png")
 default_real_img.thumbnail((70,50))
 default_real_img=ImageTk.PhotoImage(default_real_img)
 
-default_img=Image.open("default.jpg").convert('LA')
+default_img=Image.open("resources/images/akr.png").convert('LA')
 default_img.thumbnail((350,350))
 default_img=ImageTk.PhotoImage(default_img)
 
