@@ -31,3 +31,4 @@ Now you are all set to explore the BGR to GRAY Converter. Happy Hacking!!!!!!
 ## Reporting Bugs
 Feel free to report any buys or issues at the below github profile.
 Check out my Github profile [a-k-r-a-k-r](https://github.com/a-k-r-a-k-r)
+Check out my Blogger profile [Blog](https://a-k-r-a-k-r.blogspot.com)
